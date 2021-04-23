@@ -10,6 +10,7 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import pandas as pd
+import sys
 # from colaborative import CF
 
 class Colaborative_Filtering:
@@ -125,6 +126,8 @@ if __name__ == "__main__":
     for each in user_dict:
         get = recommend.get_recommend(each)
         print(get)
+
+    sys.stdout.flush()
     
 
     # rs = CF(data, k = 2, uuCF = 1)
